@@ -1,17 +1,32 @@
-# activite1
+# Activité 4.1 – Magazine Infos (Première version)
 
-A new Flutter project.
+Première application Flutter respectant le Material Design : AppBar, image principale et FloatingActionButton.
 
-## Getting Started
+## Aperçu
 
-This project is a starting point for a Flutter application.
+![Interface Magazine Infos](docs/screenshot.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Prérequis
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter SDK installé ([guide d'installation](https://docs.flutter.dev/get-started/install))
+- Un émulateur Android/iOS ou un appareil physique connecté
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+```bash
+git clone https://github.com/DavFilsDev/activite1.git
+cd activite1
+flutter pub get
+flutter run
+```
+
+## Structure du projet
+
+- `lib/main.dart` : point d'entrée (`main()`), `MonAppli` et `pageAccueil`
+- `assets/images/` : ressources images de l'application
+
+## Fonctionnalités
+
+- AppBar avec titre centré, icône menu et icône recherche
+- Image principale du magazine
+- FloatingActionButton affichant un message au clic
