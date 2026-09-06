@@ -22,6 +22,15 @@ class pageAccueil extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Container());
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Magazine Infos'),
+        centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 225, 48, 134),
+        leading: IconButton(icon: const Icon(Icons.menu), onPressed: () {}),
+        actions: [IconButton(icon: const Icon(Icons.search), onPressed: () {})],
+      ),
+      body: Container(),
+    );
   }
 }
