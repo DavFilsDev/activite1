@@ -27,12 +27,14 @@ class pageAccueil extends StatelessWidget {
         title: const Text('Magazine Infos'),
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 225, 48, 134),
+        foregroundColor: Colors.white,
         leading: IconButton(icon: const Icon(Icons.menu), onPressed: () {}),
         actions: [IconButton(icon: const Icon(Icons.search), onPressed: () {})],
       ),
       body: Image.asset('assets/images/magazineInfo.jpg', fit: BoxFit.cover),
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color.fromARGB(255, 225, 48, 134),
+        foregroundColor: Colors.white,
         onPressed: () {
           ScaffoldMessenger.of(
             context,
