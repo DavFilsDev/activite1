@@ -31,6 +31,15 @@ class pageAccueil extends StatelessWidget {
         actions: [IconButton(icon: const Icon(Icons.search), onPressed: () {})],
       ),
       body: Image.asset('assets/images/magazineInfo.jpg', fit: BoxFit.cover),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: const Color.fromARGB(255, 225, 48, 134),
+        onPressed: () {
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(const SnackBar(content: Text('Tu as cliqué dessus')));
+        },
+        child: const Text('Click'),
+      ),
     );
   }
 }
