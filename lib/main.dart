@@ -30,7 +30,7 @@ class pageAccueil extends StatelessWidget {
         leading: IconButton(icon: const Icon(Icons.menu), onPressed: () {}),
         actions: [IconButton(icon: const Icon(Icons.search), onPressed: () {})],
       ),
-      body: Container(),
+      body: Image.asset('assets/images/magazineInfo.jpg', fit: BoxFit.cover),
     );
   }
 }
