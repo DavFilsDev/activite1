@@ -31,7 +31,9 @@ class pageAccueil extends StatelessWidget {
         leading: IconButton(icon: const Icon(Icons.menu), onPressed: () {}),
         actions: [IconButton(icon: const Icon(Icons.search), onPressed: () {})],
       ),
-      body: Image.asset('assets/images/magazineInfo.jpg', fit: BoxFit.cover),
+      body: Center(
+        child: Image.asset('assets/images/magazineInfo.jpg', fit: BoxFit.cover),
+      ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color.fromARGB(255, 225, 48, 134),
         foregroundColor: Colors.white,
